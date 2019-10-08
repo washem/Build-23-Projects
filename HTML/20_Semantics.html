@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Semantics | WASH CODE - to write HTML5 with meaning </title>
+</head>
+<body>
+    <header><!-- normally near the top of a website or article to display the website or company logo or title.-->
+        <h1>WASH CODE</h1><!-- will accept h1, h1's nested further will be consequently demoted in size -->
+    </header>
+    <main><!-- can only be one main per document -->
+        <nav><!--   normally near the top of a website to help the user navigate the rest of the website.-->
+                <a href="20_Semantics.html">Semantics</a> |
+                <a href="21_SEO.html">SEO</a> |
+                <a href="22_accessibility.html">Accessibility</a>
+        </nav>
+        <article><!-- there can be many articles or sections to a page -->
+            <header><!-- the article header -->
+                <h1>Semantic HTML</h1><!-- nested header displays at h2 or less -->
+            </header>
+            <section> <!-- in this case being used to delineate the article content from the parent article structure -->
+                <h1>by Eric Washburn</h1><!-- will display as h3 -->
+                <p>
+                    The use of semantic markup can be very useful for search engine optimization (SEO).
+                    Semantic HTML is also good practice for understanding the meaning of a page and its layout.
+                </p>
+
+                <p>an example of semantic html architecture:
+                    <ul>
+                        <li><code>&lt;header&gt;</code></li>
+                        <li><code>&lt;nav&gt;</code></li>
+                        <li><code>&lt;main&gt;</code>
+                            <ul>
+                                <li><code>&lt;article&gt;</code>
+                                    <ul>
+                                        <li><code>&lt;header&gt;</code></li>
+                                        <li><code>&lt;section&gt;</code>
+                                            <ul>
+                                                <li><code>&lt;aside&gt;</code></li>
+                                            </ul>
+                                        </li>
+                                        <li><code>&lt;footer&gt;</code></li>
+                                    </ul>
+                                <li><code>&lt;aside&gt;</code></li>
+                            </ul>  
+                        </li>
+                        <li><code>&lt;footer&gt;</code></li>
+                    </ul>
+                </p>        
+            </section>
+            <footer> <!-- the article footer -->
+                <p>
+                    created on
+                    <time datetime="2019-03-08">March 8th 2019</time>
+                    
+                </p>
+            </footer>
+        </article>
+
+    </main>
+    <footer> <!-- the page footer -->
+        <p>&copy;2019 - Eric Washburn</p>
+    </footer> 
+</body>
+</html>

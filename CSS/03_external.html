@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="03.1_style.css">
+    <title>External CSS</title>
+</head>
+<body>
+    <header>
+            <h1>WASH CODE</h1>
+        </header>
+        <nav>
+            <a href="02_internal_CSS.html">BACK</a> | 
+            <a href="04_id_&_class_selectors.html">NEXT</a>
+        </nav>
+        <main>
+            <article>
+                <header>
+                    <h1>External CSS</h1>
+                </header>
+                <section>
+                    <h3>by Eric Washburn</h3>
+                    <p>A seperate .css document will be created and referenced by this html document.</p>
+                    <p>in order to access this CSS document, it will need to be linked in the <code>&lt;head&gt;</code> tag.</p>
+                    <p>It should look like this:</p>
+                    <blockquote><code>&lt;link rel="stylesheet" type="text/css" href="style.css"&gt;</code></blockquote>
+                    <p>this new CSS document can now contain style markups applied directly to each html tag:</p>
+                    <pre><code>
+    body {
+        background-color: gray;
+        color:#333
+        }
+    h1  {
+        font-size: 50px;
+        font-family: helvetica, Arial, sans-serif;
+        }
+                </code></pre>
+        <!-- <pre> tag is used for indicating preformatted text. 
+            The code tag surrounds the code being marked up. 
+            Browsers normally render pre text in a fixed-pitched font, 
+            with whitespace in tact, and without word wrap.-->
+                </section>
+            </article>
+        </main>
+        <footer> 
+            <p>&copy;2019 - Eric Washburn</p>
+        </footer>
+</body>
+</html>

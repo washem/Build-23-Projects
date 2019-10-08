@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML5 Inputs</title>
+</head>
+<body>
+    <header>
+        <h1>HTML5 Inputs</h1>    
+    </header>
+    <nav>
+    </nav>
+    <main>
+        <section>
+            <!-- association -->
+            <h2>Association</h2>
+            <p>The <em>Label</em> and <em>input</em> below are now associated thanks to the label's "for" attribute, which can be linked to the input's "id" attribute</p>
+            <p>in this case they are linked by "fname"</p>
+            <!-- code -->
+            <p><code>&lt;label <strong>for="fname"</strong>&gt;first name&lt;/label&gt;</code></p>
+            <p><code>&lt;input type="text" <strong>id="fname"</strong>&gt;</code></p>
+            <p>HTML5 also adds the ability to select the input field by clicking on the label!</p>
+        
+            <label for="fname">first name</label>
+            <input type="text" name="" id="fname">
+        </section>
+        <section>
+            <!-- validate -->
+            <h2>Validate</h2>
+            <p>some inputs can be validated for proper formating like email and url.</p>
+            <p>simply add the "require" attribute to the input.</p>
+        </section>
+        <section>
+            <!-- HTML5 input types -->
+            <h2>Input Types</h2>
+
+            <!-- search -->
+            <h3>Search</h3>
+            <p>The new html "search" type: <strong>< input type="search" ></strong></p>
+            <p>allows you to clear the search field after something has been typed into it!</p>
+            <label for="form-search">Search</label>
+            <input type="search" name="" id="form-search">
+        </section>
+        <section>
+            <!-- Email -->
+            <h3>Email</h3>
+            <p>The new html "email" type: <strong>< input type="email" ></strong> </p>
+            <p>validation using the attribute "require" would check to see if a valid email format was entered</p>
+            <label for="form-email">email</label>
+            <input type="email" name="" id="form-email">
+        </section>    
+        <section>
+            <!-- URL -->
+            <h3>URL</h3>
+            <p>The new html "url" type: <strong>< input type="url" ></strong> </p>
+            <p>validation using the attribute "require" would check to see if a valid url format was entered</p>
+            <label for="form-url">URL</label>
+            <input type="url" name="" id="form-url">
+        </section>   
+        <section>
+            <!-- Number -->
+            <h3>Number</h3>
+            <p>The new html "number" type: <strong>< input type="number" ></strong> </p>
+            <p>"min" and "max" attributes allow for a range of numbers to be selected.</p>
+            <p>the "step" attribute can also be used to increment the numbers by a set amount</p>
+            <p>omiting attributes will simply let the user select which ever integer they chose.</p>
+            <p>< input type="number" id="form-number" <strong>min="0" max="10" step="2"</strong>></p>
+            <label for="form-number">number</label>
+            <input type="number" name="" id="form-number" min="0" max="10" step="2">
+        </section>
+        <section>
+            <!-- Range -->
+            <h3>Range</h3>
+            <p>The new html "Range" type: <strong>< input type="range" ></strong> </p>
+            <p>will not display the number chosen. needs javascript. </p>
+            <p>"min" and "max" attributes allow for a range of numbers to be selected.</p>
+            <label for="form-range">Range 1-10</label>
+            <input type="range" name="" id="form-range" min="0" max="10">
+        </section>
+        <section>
+            <!-- Date -->
+            <h3>Date</h3>
+            <p>The new html "Date" type: <strong>< input type="date" ></strong> </p>
+            <p>input field will display a calandar drop down (not all browsers)</p>
+            <p>date "min" and "max" can be enabled</p>
+            <label for="form-date">Date</label>
+            <input type="date" name="" id="form-date">
+        </section>
+        <section>
+            <!-- month -->
+            <h3>Month</h3>
+            <p>The new html "month" type: <strong>< input type="month" ></strong> </p>
+            <p></p>
+            <label for="form-month">Month</label>
+            <input type="month" name="" id="form-month">
+        </section>
+        <section>
+            <!-- week -->
+            <h3>week</h3>
+            <p>The new html "week" type: <strong>< input type="week" ></strong> </p>
+            <p></p>
+            <label for="form-week">week</label>
+            <input type="week" name="" id="form-week">
+        </section>
+        <section>
+            <!-- time -->
+            <h3>Time</h3>
+            <p>The new html "time" type: <strong>< input type="time" ></strong> </p>
+            <label for="form-time">time</label>
+            <input type="time" name="" id="form-time">
+        </section>
+        <section>
+            <!-- datetime -->
+            <h3>Datetime</h3>
+            <p>The new html "datetime" type: <strong>< input type="datetime" ></strong> </p>
+            <p>curently seems unsupported</p>
+            <label for="form-datetime">datetime</label>
+            <input type="datetime" name="" id="form-datetime">
+        </section>
+        <section>
+            <!-- datetime local -->
+            <h3>Datetime Local</h3>
+            <p>The new html "datetime-local" type: <strong>< input type="datetime-local" ></strong> </p>
+            <label for="form-datetime-local">datetime</label>
+            <input type="datetime-local" name="" id="form-datetime-local">
+        </section>
+        <section>
+            <!-- colour -->
+            <h3>colour picker</h3>
+            <p>The new html "color" type: <strong>< input type="color" ></strong> </p>
+            <label for="form-color">colour</label>
+            <input type="color" name="" id="form-color">
+        </section>
+    </main> 
+</body>
+</html>

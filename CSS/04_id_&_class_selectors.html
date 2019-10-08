@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="03.1_style.css">
+    <title>ID & CLASS SELECTORS | WASH CODE Understand IDs and Class Selectors</title>
+</head>
+<body>
+    <header>
+            <h1>WASH CODE</h1>
+        </header>
+        <nav>
+            <a href="03_external.html">BACK</a> | 
+            <a href="05_descendants.html">NEXT</a>
+        </nav>
+        <main>
+            <article>
+                <header>
+                    <h1>IDs and Class Selectors</h1>
+                </header>
+                <section>
+                    <h3>by Eric Washburn</h3>
+                    <p>HTML tags can have specific markup instructions using the following attributes: </p>
+                    <blockquote><p><code>id=""</code></p>and<p><code>class=""</code></p></blockquote>
+                    <p>Here is an example:</p>
+                    <blockquote><code>&lt;body id="idSample" class="class-sample"&gt;&lt;/body&gt;</code></blockquote>
+                    <p>Simply preface the <code>id=""</code> attribute label in CSS with a <code>#</code><br>in order to specify style instructions to that HTML tag: 
+                    <pre><code id="idStyle">
+        #idSample {
+            background-color: gray;
+            color:#333
+            }
+                    </code></pre></p>
+                    <p>Preface the <code>class=""</code> attribute label in CSS with a <code>.</code>(period)<br>in order to specify style instructions to that HTML tag: 
+                        <pre><code class="class-style">
+        .class-sample {
+            background-color: gray;
+            color:#333
+            }
+                    </code></pre></p>
+                    <p>The HTML tag can be called before the ID or Class in order to be more specific<br> in the case that the ID or Class is used in different HTML tags:
+                        <pre><code id="idSpecific">
+        code#idSample {
+            background-color: gray;
+            color:#333
+            }
+                        </code></pre></p>
+                </section>
+            </article>
+        </main>
+        <footer> 
+            <p>&copy;2019 - Eric Washburn</p>
+        </footer>
+</body>
+</html>

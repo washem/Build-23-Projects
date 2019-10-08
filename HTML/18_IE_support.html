@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]-->
+    <title>IE Support</title>
+</head>
+<body>
+    <h1>Legacy Browser compatibility</h1>
+
+    <p>You can teach older browsers to handle HTML5 correctly.</p>
+
+    <p>Thankfully, Sjoerd Visscher created the HTML5Shiv!</p>
+
+    <p>HTML5Shiv is a JavaScript workaround to enable styling of HTML5 elements in versions of Internet Explorer prior to version 9.</p>
+
+    
+    <a href="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">the shiv/shim script</a> 
+    <p>The following HTML5Shiv script must be placed in the <code>&lt;head&gt;</code> element, after any stylesheets:</p>  
+    <code>&lt;!--[if lt IE 9]></code><br>
+    <code>&lt;script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">&lt;/script&gt;<br>
+    &lt;![endif]--&gt;</code><br>
+
+    <p>this script tag is wrapped in a conditional comment that IE will read.</p>
+    <p>similar to a normal <code>&lt;-- --&gt;</code> comment, a conditional comment includes an "if" statement.</p>
+    <p>it reads out like this:</p>
+    <span></span><code>&lt;!--[if lt IE 9]></code> = (if less that IE)</span><br>
+</body>
+</html>

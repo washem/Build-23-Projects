@@ -1,0 +1,21 @@
+body    {
+    background-color: rgb(223, 223, 223);
+    font-family: Arial, Helvetica, sans-serif
+}
+
+/* ID and Class selectors */
+
+#idStyle {
+    color: blue
+}
+
+.class-style    {
+    color: darkblue
+}
+
+code#idSpecific    {
+    color: darkgreen
+}
+
+/* Descendant Selectors */
+
